@@ -1,1 +1,290 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ng-app="dnevnik" ng-jq=""><head>
+    <meta name="google" value="notranslate">
+    <meta charset="utf-8">
+    <title>Подписки</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Удобная и безопасная среда общения школьников, учителей и родителей. Домашние задания, расписание, оценки - всё в одном месте.">
+    
+    
+    <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script>
+    function sendMetrika(type, action) {
+        if (document.readyState === 'complete' && window.dnevnik && window.dnevnik.analytics && window.dnevnik.analytics.yandex && window.dnevnik.analytics.yandex.params) {
+                var params = '{"SmartAppBanner": {"1000014099179": { "student": {"'+type+'": {"'+action+'":{}}}}}}';
+                window.dnevnik.analytics.yandex.params(JSON.parse(params));
+            }
+        }        
+    </script>
+        <link rel="manifest" href="https://emaktab.uz/manifest">
+        <script>
+            document.addEventListener('smartbanner.view', function() { sendMetrika("smartapp_android_old", "view"); });
+            document.addEventListener('smartbanner.clickView', function() { sendMetrika("smartapp_android_old", "clickApp"); });
+            document.addEventListener('smartbanner.clickInstall', function() { sendMetrika("smartapp_android_old", "clickGooglePlay"); });
+        </script>
 
+    
+    <link rel="icon" href="https://static.emaktab.uz/img/icons/favicon_Uz.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://static.emaktab.uz/img/icons/favicon_Uz.ico" type="image/x-icon">
+    
+
+        <link rel="stylesheet" href="https://static.emaktab.uz/styles/main/common.css?v=143157b6" media="all" type="text/css">
+        <link rel="stylesheet" href="https://static.emaktab.uz/blocks/blocks.css?v=72ef00f1" media="all" type="text/css">
+        <link rel="stylesheet" href="https://static.emaktab.uz/css/adaptive.css?v=068f655e" media="all" type="text/css"> 
+    <link rel="stylesheet" href="https://static.emaktab.uz/client/notifications.css?v=cd15f86a" type="text/css">
+
+    
+<script type="text/javascript">var dnevnik = {"urls":{"domain":"emaktab.uz","taskStateUrl":"https://emaktab.uz/TaskStateHandler","moderate":"https://emaktab.uz/v2/soc/moderation/abuse","whiteList":["2gis.ru","adfox.ru","aliexpress.com","apple.com","avito.ru","booking.com","csdnevnik.ru","dnevnik.ru","dnevnik.ru","facebook.com","fotostrana.ru","foxford.ru","gismeteo.ru","globallab.org","google.com","google.ru","gosuslugi.ru","hh.ru","instagram.com","instagram.com","kinopoisk.ru","lego.com","lenta.ru","letovo.ru","livejournal.com","magnit.ru","magnit-info.ru","magnitznaniy.ru","mail.ru","microsoft.com","mosreg.ru","mosregtest.ru","office.com","office365.com","ok.ru","onenote.com","pikabu.ru","rambler.ru","rbc.ru","research.net","ria.ru","sberbank.ru","sharepoint.com","surveymonkey.com","surveymonkey.ru","twitch.tv","twitter.com","vk.com","wikipedia.org","yadi.sk","yaklass.ru","yandex.ru","youtu.be","youtube.com","kundalik.com","utube.uz","imumk.ru","https://uz.mfactory.online/","kundalik.analyticsapp.uz","kundalik.ozlashtah.uz","uzum.go.link","go.link","redirect.appmetrica.yandex.com","https://emaktab.tech/","https://www.anorbank.uz","smart.emaktab.uz","https://emaktab.tech","https://smart.emaktab.uz","emaktab.uz","emaktab.tech","https://t.me/%20S63ZvFPEQhI4YTk6","https://t.me/%20S63ZvFPEQhI4YTk6"],"userCounters":"https://emaktab.uz/counters","emailSettings":"https://emaktab.uz/v2/user/settings?view=email","smilesSpriteUrl":"https://static.emaktab.uz/images/sprites/emojione.sprites.svg","tinyMceBaseUrl":"https://static.emaktab.uz/assets/scripts/vendors/tinymce","gaAutoLinkUrls":null,"adblockDummyUrl":""},"settings":{"yandexMetrikaIds":["52725535"],"yandexMetrikaСlickmapEnabled":true,"enableAdFoxZeroPixel":true,"yandexMetrikaId":"52725535","environmentPrefix":"Uz","yandexMetrikaWebvisorEnabled":false},"fileUploadSettings":{"stateUrl":"https://content.emaktab.uz/gettaskstatus","resultUrl":"https://content.emaktab.uz/getresult","deleteFileUrl":"https://content.emaktab.uz/delete","deleteFolderUrl":"https://content.emaktab.uz/deletefolder","defaultFileSizeLimit":"2147483648"},"user":{"preferableLanguage":"ru-RU","suitableCultures":["ru-RU","uz-Latn-UZ"],"id":"1000014099179","sex":"Female","age":11,"emailHash":"d87370961c81cc68b374c0cc78969309a9bb956230b2509df05da13ce8243e39","group":59,"role":"EduStudent","commonRole":"student","schools":[{"id":"1000011368237","regionName":"Кашкадарьинская область"}],"children":[],"isMethodist":false,"experimentPRTopic":"None"},"auth":{"isAuthenticated":true,"updateInterval":600000,"loginUrl":"https://login.emaktab.uz/auth","masterLoginUrl":null},"visitParams":{"__RedesignAbGroup2":"groupA"},"localizationSchoolType":"","contextRegionUrl":""};</script>
+
+            <script type="text/javascript" src="https://static.emaktab.uz/assets/scripts/modules/redesign.min.100721f5.js?v=100721f5"></script>
+    <script type="text/javascript" src="https://static.emaktab.uz/assets/scripts/vendors/requirejs/require-2.3.7.js?v=084c85b2"></script>
+    <script type="text/javascript">
+        require.config({
+            baseUrl: "https://static.emaktab.uz/assets/scripts/modules",
+            urlArgs: "v=7e0e9677",
+        });
+    </script>
+            <script type="text/javascript" src="https://static.emaktab.uz/assets/scripts/modules/main-redesign.min.bbd7fce2.js?v=bbd7fce2"></script>
+    <script type="text/javascript" src="https://static.emaktab.uz/blocks/blocks.js?v=65486391"></script>
+    <script type="text/javascript" src="https://static.emaktab.uz/javascripts/local/ru.js?v=0320e479"></script>
+    <script src="https://static.emaktab.uz/client/react.vendor.bundle.js?v=e846d0cb" type="text/javascript"></script>
+
+    <script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://yastatic.net"><link rel="preconnect" href="https://avatars.mds.yandex.net"><link rel="preconnect" href="https://mc.yandex.ru"><link rel="preconnect" href="https://ads.adfox.ru"><link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2" type="font/woff2" as="font" crossorigin="anonymous"><style id="ysTextCssRule">@font-face {
+        font-family: "YS Text Variable";
+        src: url("https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2") format("woff2");
+        font-weight: 400 700;
+        font-display: optional;
+    }</style><script async="" crossorigin="anonymous" src="https://yastatic.net/safeframe-bundles/0.83/host.js"></script>
+    <script src="https://static.emaktab.uz/client/localization/uz.ru-RU.js?v=772cc8dc" type="text/javascript"></script>
+    
+    
+    <script type="text/javascript">
+        require(['layoutcontrols/menu'],
+            function (menu) {
+                var model = {
+                    newMessages: "Новых сообщений",
+                    noMessages: "Нет новых сообщений",
+                    newFriendRequests: "Новых друзей",
+                    noFriendRequests: "Нет новых друзей",
+                    newGroups: "Новых приглашений",
+                    noGroups: "Нет новых приглашений",
+                    Account: "Личный счёт",
+                    newEvents: "Новых событий",
+                    noEvents: "Нет новых событий",
+                };
+                menu(model);
+            });
+    </script>
+    <script src="https://static.emaktab.uz/client/localization/uz.ru-RU.js?v=772cc8dc" type="text/javascript"></script>
+    
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menu" src="https://static.emaktab.uz/assets/scripts/modules/layoutcontrols/menu.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/userCounter" src="https://static.emaktab.uz/assets/scripts/modules/layoutcontrols/userCounter.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menumore" src="https://static.emaktab.uz/assets/scripts/modules/layoutcontrols/menumore.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/domready" src="https://static.emaktab.uz/assets/scripts/modules/utils/domready.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menuPointerMarker" src="https://static.emaktab.uz/assets/scripts/modules/layoutcontrols/menuPointerMarker.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blocks/dropdownContainer/dropdownContainer" src="https://static.emaktab.uz/assets/scripts/modules/blocks/dropdownContainer/dropdownContainer.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/menuYaMetrika" src="https://static.emaktab.uz/assets/scripts/modules/analytics/menuYaMetrika.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/urlTracker" src="https://static.emaktab.uz/assets/scripts/modules/analytics/urlTracker.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ab/yandexMetrikaTracker" src="https://static.emaktab.uz/assets/scripts/modules/ab/yandexMetrikaTracker.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/adblockDummyInsert" src="https://static.emaktab.uz/assets/scripts/modules/common/adblockDummyInsert.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="storeButtonsMetrikaHelper" src="https://static.emaktab.uz/assets/scripts/modules/storeButtonsMetrikaHelper.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blocks/footerCopyright/footerCopyright" src="https://static.emaktab.uz/assets/scripts/modules/blocks/footerCopyright/footerCopyright.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="yandexMetrika/yandexMetrikaCounter" src="https://static.emaktab.uz/assets/scripts/modules/yandexMetrika/yandexMetrikaCounter.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/commonYaMetrika" src="https://static.emaktab.uz/assets/scripts/modules/analytics/commonYaMetrika.js?v=7e0e9677"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/loginYaMetrika" src="https://static.emaktab.uz/assets/scripts/modules/analytics/loginYaMetrika.js?v=7e0e9677"></script></head>
+<body class="page-body">
+    
+
+<div class="5200f82604d54acaa1e36e667e1bc92a asyncRichMediaBanner"><!--В head сайта один раз подключите библиотеку-->
+<script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script>
+
+<!--AdFox START-->
+<!--Dnevnik.ru-->
+<!--Площадка: Kundalik.com / * / *-->
+<!--Тип баннера: Rich Media-->
+<!--Расположение: <верх страницы>-->
+<div id="adfox_161046474726326362"></div>
+<script>
+    window.Ya.adfoxCode.create({
+        ownerId: 222314,
+        containerId: 'adfox_161046474726326362',
+        params: {
+            pp: 'g',
+            ps: 'elzz',
+            p2: 'p',
+ puid1: '11',
+    puid2: 'F',
+    puid3: 'STUDENT',
+    puid4: '347',
+    puid5: 'N',
+    puid6: 'N',
+    puid7: '70:1225',
+    puid8: 'N',
+    puid9: 'ComprehensiveSchool',
+    puid10: 'N',
+    puid11: 'P',
+    puid12: 'N',
+    puid13: 'N',
+    puid14: 'N',
+    puid15: 'N',
+    puid16: '',
+    puid17: '',
+    puid18: '',
+    puid19: '59G',
+    puid20: '4K',
+    puid21: 'N',
+    puid22: 'ru-RU',
+    puid23: '1000014099179',
+    puid24: 'N',
+    puid25: 'N'
+        }
+    });
+</script></div><script>$(document).ready(function () {let container=$(".5200f82604d54acaa1e36e667e1bc92a");if(container.css("display")!=="none"){container.html($(".5200f82604d54acaa1e36e667e1bc92a > div").text());} });</script>    <script type="text/javascript">if(top != self){alert('Внимание! Вы перешли на сайт "eMaktab", используя строннюю ссылку, что может быть небезопасно. Открытие сайта будет прервано.');if(document.execCommand) document.execCommand('Stop');if(window.stop) window.stop();}</script>
+
+
+    
+    <script type="text/javascript">
+        require(['layoutcontrols/menu', 'analytics/urlTracker', 'ab/yandexMetrikaTracker'], function (menu, urlTracker, yandexMetrikaTracker) {
+
+             var model = {
+                 newMessages: "Новых сообщений",
+                 noMessages: "Нет новых сообщений",
+                 newFriendRequests: "Новых друзей",
+                 noFriendRequests: "Нет новых друзей",
+                 newGroups: "Новых приглашений",
+                 noGroups: "Нет новых приглашений",
+                 Account: "Личный счёт",
+                 newEvents: "Новых событий",
+                 noEvents: "Нет новых событий",
+             };
+
+             menu(model);
+
+             var urlTrackerModel = {
+                 elementSelector: 'li#AppCenter>a',
+                 urlPrefix: '/virtual/center',
+                 trackingConditions: 'click'
+             };
+             urlTracker(urlTrackerModel);
+
+             yandexMetrikaTracker({ action: 'reachGoal' });
+        });
+
+        require(['common/adblockDummyInsert'], function (adblockDummyInsert) {
+            adblockDummyInsert();
+        });
+    </script>
+    <div class="page-wrapper" id="contentWrapper">
+
+
+        <div class="page-content">
+            <div class="clear"></div>
+            
+
+
+<div class="payment-page">
+    <div id="paid_access"><div class="liwSs"><div class="UIf_4"><div class="Pg6lY"><div class="cwgdi"><div class="VifGD"><div class="QDCGP"><a title="Durdona Murotqulova" class="LXKu6 urItc" target="_self" style="width: 42px; height: 42px; margin-right: 0px;"><span class="oLw3e">DM</span></a></div></div><div><div class="MHXwW">ФИ</div><div class="SjSmS"> 0-А, Название школы</div></div></div></div></div></div><div id="paid_access_opportunities_banner" class="pQmkm"><div><div class="05991c89064e439d9b5df1ca1a277f23 asyncPaidAccessOpportunitiesBanner"><!--AdFox START-->
+<!--Dnevnik.ru-->
+<!--Площадка: Kundalik.com / main / Баннер на странице покупки дневника УЗ-->
+<!--Категория: <не задана>-->
+<!--Тип баннера: Баннер на странице покупки дневника УЗ-->
+<div id="adfox_16873264070438884"></div>
+<script>
+    window.yaContextCb.push(()=>{
+        Ya.adfoxCode.create({
+            ownerId: 222314,
+            containerId: 'adfox_16873264070438884',
+            params: {
+                p1: 'cylvm',
+                p2: 'ikwb',
+puid1: '11', puid2: 'F', puid3: 'STUDENT', puid4: '347', puid5: 'N', puid6: 'N', puid7: '70:1225', puid8: 'N', puid9: 'ComprehensiveSchool', puid10: 'N', puid11: 'P', puid12: 'N', puid13: 'N', puid14: 'N', puid15: 'N', puid16: 'ads_yandex_noProAccess', puid17: '77G', puid19: '59G', puid20: '4K', puid21: 'N', puid22: 'ru-RU', puid23: '1000014099179', puid24: 'N', puid25: 'N'
+            }
+        })
+    })
+</script></div></div></div><div class="f9eFN"><div class="r5Nwx"><div class="sp1vg" data-test-id="subscription_eMaktabPRO_1000014994016"><div class="LhBW9" data-test-id="subscription_tariff_name">Dnevnik PRO</div><div class="pNzFQ"><div class="gu56X"><ul><li>Мобильное приложение</li><li>Web-версия</li><li>Местонахождение детей</li><li>Рейтинг</li></ul></div></div><div class="ORwOn"><div><div class="_XOzz" data-test-id="subscription-price">60&nbsp;000 сум/год</div><div class="Ps7TX" data-test-id="subscription-detailed-price">5&nbsp;000 сум/мес</div></div><button class="xJ6qa" data-test-id="subscription-buy-button">Оформить подписку</button></div></div><div class="IRJB_" data-test-id="subscription_eMaktab_1000014994016"><div class="UovzO" data-test-id="subscription_tariff_name">Dnevnik Web</div><div class="QYoD8"><div class="Q_h4i"></div><div class="osaHj">У Вас оформлен неограниченный доступ в web-версию. Подписка будет активна до 06.12.2025</div></div></div></div></div><div class="G2fFP"><div><a class="hnW2D" data-test-id="has-promocode-button">У меня есть промокод</a></div></div></div>
+</div>
+
+<script>
+    window.__PAID_ACCESS__INITIAL__STATE__ = {"subscriptions":[{"subscriptionType":"Mobile","consumer":{"userId":"1000014099179","personId":"1000014994016","name":"Durdona Murotqulova","avatarUrl":null,"redirectUrl":"https://emaktab.uz/v2/user/user?user=1000014099179"},"payerName":null,"childNameForTariffHeader":"","tariffName":"<b>eMaktab PRO</b>","tariffNamePlain":"eMaktabPRO","tariffAlias":"PaidAccessPro","yaMetrikaAccessAlias":null,"tariffDescription":"Доступ на сайт и в мобильное приложение eMaktab. Одна подписка на всех учеников, их родителей и родственников, зарегистрированных в системе","tariffOptions":["Мобильное приложение","Web-версия","Местонахождение детей","Рейтинг"],"isActive":false,"isTrial":false,"isAllInOneTariff":true,"tariffDaysCount":365,"paidPeriodEnd":"","price":"60 000","detailedPrice":"5 000","paymentId":null,"isCurrentUsersSubscription":false,"agreementsTermsUrl":"https://emaktab.uz/agreements/terms","order":20,"isOncePurchase":false,"getForFreeInfoUrl":null,"timer":null,"telegramRedirectUrl":""},{"subscriptionType":"Web","consumer":{"userId":"1000014099179","personId":"1000014994016","name":"Durdona Murotqulova","avatarUrl":null,"redirectUrl":"https://emaktab.uz/v2/user/user?user=1000014099179"},"payerName":"Durdona Murotqulova","childNameForTariffHeader":"для Durdona Murotqulova","tariffName":"<b>eMaktab</b>","tariffNamePlain":"eMaktab","tariffAlias":null,"yaMetrikaAccessAlias":null,"tariffDescription":"Доступ на сайт eMaktab через web-браузер. Оплачивается для каждого ученика отдельно","tariffOptions":["Оценки на сайте"],"isActive":true,"isTrial":false,"isAllInOneTariff":false,"tariffDaysCount":0,"paidPeriodEnd":"06.12.2025","price":"","detailedPrice":"","paymentId":"25388284","isCurrentUsersSubscription":true,"agreementsTermsUrl":"https://emaktab.uz/agreements/terms","order":31,"isOncePurchase":false,"getForFreeInfoUrl":null,"timer":null,"telegramRedirectUrl":""}],"persons":[{"isCurrentUser":true,"userId":"1000014099179","personId":"1000014994016","isStudent":true,"avatarUrl":null,"shortName":"Durdona M.","name":"Durdona Murotqulova","schoolGroupNames":[{"schoolName":"43-sonli umumiy o‘rta ta‘lim maktabi","groupName":"4-A"}]}],"selectedPersonId":"1000014994016","apiUrl":"https://emaktab.uz/api/billing/paidAccess","environmentPrefix":"Uz","banner":"&lt;div class=&quot;05991c89064e439d9b5df1ca1a277f23 asyncPaidAccessOpportunitiesBanner&quot;&gt;&lt;div style=&quot;display:none;&quot;&gt;&amp;lt;!--AdFox START--&amp;gt;\n&amp;lt;!--Dnevnik.ru--&amp;gt;\n&amp;lt;!--Площадка: Kundalik.com / main / Баннер на странице покупки дневника УЗ--&amp;gt;\n&amp;lt;!--Категория: &amp;lt;не задана&amp;gt;--&amp;gt;\n&amp;lt;!--Тип баннера: Баннер на странице покупки дневника УЗ--&amp;gt;\n&amp;lt;div id=&amp;quot;adfox_16873264070438884&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;\n&amp;lt;script&amp;gt;\n    window.yaContextCb.push(()=&amp;gt;{\n        Ya.adfoxCode.create({\n            ownerId: 222314,\n            containerId: &amp;#39;adfox_16873264070438884&amp;#39;,\n            params: {\n                p1: &amp;#39;cylvm&amp;#39;,\n                p2: &amp;#39;ikwb&amp;#39;,\npuid1: &amp;#39;11&amp;#39;, puid2: &amp;#39;F&amp;#39;, puid3: &amp;#39;STUDENT&amp;#39;, puid4: &amp;#39;347&amp;#39;, puid5: &amp;#39;N&amp;#39;, puid6: &amp;#39;N&amp;#39;, puid7: &amp;#39;70:1225&amp;#39;, puid8: &amp;#39;N&amp;#39;, puid9: &amp;#39;ComprehensiveSchool&amp;#39;, puid10: &amp;#39;N&amp;#39;, puid11: &amp;#39;P&amp;#39;, puid12: &amp;#39;N&amp;#39;, puid13: &amp;#39;N&amp;#39;, puid14: &amp;#39;N&amp;#39;, puid15: &amp;#39;N&amp;#39;, puid16: &amp;#39;ads_yandex_noProAccess&amp;#39;, puid17: &amp;#39;77G&amp;#39;, puid19: &amp;#39;59G&amp;#39;, puid20: &amp;#39;4K&amp;#39;, puid21: &amp;#39;N&amp;#39;, puid22: &amp;#39;ru-RU&amp;#39;, puid23: &amp;#39;1000014099179&amp;#39;, puid24: &amp;#39;N&amp;#39;, puid25: &amp;#39;N&amp;#39;\n            }\n        })\n    })\n&amp;lt;/script&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;$(document).ready(function () {let container=$(&quot;.05991c89064e439d9b5df1ca1a277f23&quot;);if(container.css(&quot;display&quot;)!==&quot;none&quot;){container.html($(&quot;.05991c89064e439d9b5df1ca1a277f23 &gt; div&quot;).text());} });&lt;/script&gt;","userLogin":"durdona.murotqulova","isHumansExperimentEnabled":false,"isCashbackEnabled":false,"isOnlyClickRedirectEnabled":false,"getForFreeUrl":null,"availablePaymentSystems":["ClickUzAdvancedShop","Payme","ClickUzRedirect","SecureEight","ClickUzAllGood"],"error":{"showError":false,"errorMessage":null},"referentId":null};
+</script>
+<link rel="stylesheet" href="https://static.emaktab.uz/client/paid_access.css?v=14396f1a" type="text/css">
+<script src="https://static.emaktab.uz/client/paid_access.js?v=29ec4043" type="text/javascript"></script>
+<script src="https://my.click.uz/pay/checkout.js"></script>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="page-footer page-footer_auth" id="">
+            <div class="page-footer__banner">
+                
+                
+            </div>
+        <div class="page-footer__content">
+            <div class="page-footer__menu-layout ">
+                <div class="page-footer__statistics">
+                </div>
+
+            </div>
+
+                <div class="page-footer__mobile-app-links">
+                    
+                    
+                </div>
+                <script type="text/javascript">
+                    require(['storeButtonsMetrikaHelper'],
+                        function () {
+                        });
+                </script>
+
+            <div class="page-footer__copyright-layout">
+                    <a href="https://emaktab.uz/terms/" class="page-footer__copyright-layout-agreement">Пользовательское соглашение</a>
+                
+                <div class="page-footer__copyright-layout-details">
+                    <p class="page-footer__copyright-layout__terms"></p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            require(['blocks/footerCopyright/footerCopyright'],
+                function () {
+                });
+        </script>
+    </div>
+<div class="clear"></div>    <!-- tns-counter.ru --><script>
+            var img = new Image();
+            img.src = '//www.tns-counter.ru/V13a***R&gt;' + document.referrer.replace(/\*/g, '%2a') + '*dnevnik_ru/ru/CP1251/tmsec=dnevnik_total/';
+        </script><noscript><img src="//www.tns-counter.ru/V13a****dnevnik_ru/ru/CP1251/tmsec=dnevnik_total/" width="1" height="1" alt="" /></noscript><!--/ tns-counter.ru -->
+    
+    
+<script type="text/javascript">
+    require(['yandexMetrika/yandexMetrikaCounter']);
+</script>
+
+    <script type="text/javascript">
+        require(['analytics/commonYaMetrika']);
+    </script>
+
+<noscript>
+    <div>
+            <img src="//mc.yandex.ru/watch/52725535" style="position: absolute; left: -9999px;" alt="" />
+    </div>
+</noscript>
+    <script src="https://static.emaktab.uz/scripts/modules/ab/ab-workplace.js?v=1b947011"></script>
+
+
+
+    <div id="talk_popup_widget"></div>
+    <div id="create_chat_widget"></div>
+    <link rel="stylesheet" href="https://static.emaktab.uz/client/talk.css?v=1ef56473" type="text/css">
+    <link rel="stylesheet" href="https://static.emaktab.uz/client/create_chat_widget.css?v=5e2d428b" type="text/css">
+    <script>
+        window.apiUrls = {
+            ...window.apiUrls,
+            publicclub: "https://emaktab.uz/api/communities",
+            userKeyValueStorage: "https://emaktab.uz/api/storage",
+        }
+        window.__TALK__INITIAL__STATE__ = window.__TALK__INITIAL__STATE__ || {"user":{"avatarLarge":null,"irrelevant":false,"created":false,"sex":"Female","isSystem":false,"schoolName":null,"classTeacher":null,"chatType":"NotSet","schoolId":"0","isArchiveContact":false,"affiliations":null,"isPooSchool":false,"isOdoSchool":false,"isGptChat":false,"jid":"user_1000014099179@xmpp.emaktab.uz","type":"Personal","name":"Murotqulova Durdona","shortName":"Murotqulova D.","avatar":null,"avatarBackground":null,"unknown":false,"roles":["student"],"schoolIds":["1000011368237"],"groups":{},"teacherGroups":{},"classTeacherGroups":[],"subjects":null,"profileUrl":"https://emaktab.uz/v2/user/user?user=1000014099179","isDnevnikExpert":false},"urls":{"messengerUrl":"https://emaktab.uz/chat?chatsource=tomsgwidget","faviconUrl":"https://static.emaktab.uz/img/icons/favicon_Uz.ico","messengerFaviconUrl":"https://static.emaktab.uz/img/icons/messenger_favicon.ico","returnUrl":"https://emaktab.uz","logoUrl":"https://static.emaktab.uz/images/logo/Uz/big_dnevnik.ru.png","termsUrl":"https://emaktab.uz/agreements/terms","host":"xmpp.emaktab.uz","multiUserChatHost":"muclight.xmpp.emaktab.uz","feedbackUrl":"https://forms.yandex.ru/cloud/66faa36ec417f3fd1fffeb8d/","asyncTaskApiUrl":"https://emaktab.uz","customChatsAvatarsUrl":"https://static.emaktab.uz/images/avatars/abstract","messengerArchive":null,"pollsApiUrl":"https://emaktab.uz/api/polls","pollsUrl":"https://emaktab.uz/polls","chatUrl":"https://emaktab.uz/chat","apiUrl":"https://emaktab.uz/chat/api","mongooseBoshHost":"https://xmpp.emaktab.uz/http-bind","mongooseWSHost":"wss://xmpp.emaktab.uz/ws-xmpp","useBosh":false},"environmentPrefix":"Uz","metrika":{"userId":"1000014099179","role":"student","source":null,"page":null},"attachmentHosts":["","attachments.emaktab.uz"],"inactiveTabConnectionTimeoutSeconds":600,"inboxPollingIntervalSeconds":30,"keepAliveInterval":300,"credentialsPollInterval":300,"userExperiments":{"survey":false,"onlineStatus":false,"hideAds":false,"messengerAdaptiveJournal":false,"messengerMongooseArchive":false,"messengerMongooseNotice":false,"schoolsInCustomChatsExperiment":[]},"unreadCount":0,"unreadRoles":[],"rosterVersioningEnabled":true,"rosterCacheTTL":432000,"messageStatusesEnabled":true,"showAppLinks":false,"zeroHeight":false,"notice":null,"schoolsInfo":[{"id":"1000011368237","name":"43-sonli umumiy o‘rta ta‘lim maktabi","isOdoSchool":false,"isPooSchool":false}]};
+        window.__CREATE__CHAT__INITIAL__STATE__ = window.__CREATE__CHAT__INITIAL__STATE__ || { baseUrl: "https://emaktab.uz" };
+        window.__MEDIA_WIDGET__INITIAL__STATE__ = window.__MEDIA_WIDGET__INITIAL__STATE__ || {"apiUrl":"https://attachments.emaktab.uz/api","maxUploadFileSize":"10485760","maxUploadFileSizeMessage":"(<a href=\"https://help.emaktab.uz/hc/ru/articles/360013145039\" target=\"_blank\">до 10 Мб</a>)","gridPreviewExperiment":false};
+    </script>
+    <script src="https://static.emaktab.uz/client/talk.js?v=b7076e59" type="text/javascript"></script>
+    <script src="https://static.emaktab.uz/client/create_chat_widget.js?v=da594062" type="text/javascript"></script>
+
+
+    
+
+
+
+<div id="tooltip_modal" class="BfEIc"></div></body></html>
