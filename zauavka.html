@@ -1,0 +1,109 @@
+<?php
+include 'db.php';
+$message = "";
+
+// --- Добавление школы ---
+if (isset($_POST['add_school'])) {
+    $name = $_POST['name'];
+    $license = $_POST['license'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $username = strtolower(str_replace(' ', '', $name)) . rand(100,999);
+    $password = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz0123456789"),0,8);
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+
+    $stmt = $conn->prepare("INSERT INTO schools (name, license, phone, email, username, password) VALUES (?,?,?,?,?,?)");
+    $stmt->bind_param("ssssss",$name,$license,$phone,$email,$username,$hash);
+    if ($stmt->execute()) {
+        $message = "✅ Школа добавлена! Логин: <b>$username</b> Пароль: <b>$password</b>";
+    } else $message = "❌ Ошибка: ".$stmt->error;
+}
+
+// --- Действия с школой ---
+if (isset($_GET['action']) && isset($_GET['id'])) {
+    $id = intval($_GET['id']);
+    if ($_GET['action'] == 'delete') {
+        $conn->query("DELETE FROM schools WHERE id=$id");
+    }
+    if ($_GET['action'] == 'suspend') {
+        $conn->query("UPDATE schools SET status='suspended' WHERE id=$id");
+    }
+    if ($_GET['action'] == 'activate') {
+        $conn->query("UPDATE schools SET status='active' WHERE id=$id");
+    }
+    if ($_GET['action'] == 'reset') {
+        $new_pass = substr(str_shuffle("abcdefghijklmnopqrstuvwxyz0123456789"),0,8);
+        $hash = password_hash($new_pass,PASSWORD_DEFAULT);
+        $conn->query("UPDATE schools SET password='$hash' WHERE id=$id");
+        $message = "🔑 Новый пароль: $new_pass";
+    }
+}
+
+// --- Получаем все школы ---
+$result = $conn->query("SELECT * FROM schools ORDER BY id DESC");
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Управление школами</title>
+<style>
+body { font-family: Arial; padding:20px; background:#f5f7fa; }
+.container { max-width:900px; margin:auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+table { width:100%; border-collapse: collapse; margin-top:20px; }
+table, th, td { border:1px solid #ccc; }
+th, td { padding:8px; text-align:center; }
+a { text-decoration:none; padding:4px 8px; border-radius:4px; color:white; }
+a.delete { background:red; }
+a.suspend { background:orange; }
+a.activate { background:green; }
+a.reset { background:blue; }
+form input { padding:8px; margin:5px; width:150px; }
+button { padding:8px 12px; }
+.message { background:#eef; padding:10px; margin:10px 0; border-radius:5px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Управление школами</h2>
+
+<?php if($message) echo "<div class='message'>$message</div>"; ?>
+
+<h3>Добавить школу</h3>
+<form method="post">
+    <input name="name" placeholder="Название" required>
+    <input name="license" placeholder="Лицензия">
+    <input name="phone" placeholder="Телефон">
+    <input name="email" placeholder="Email">
+    <button name="add_school">Добавить</button>
+</form>
+
+<h3>Все школы</h3>
+<table>
+<tr>
+<th>ID</th><th>Название</th><th>Лицензия</th><th>Телефон</th><th>Email</th><th>Логин</th><th>Статус</th><th>Действия</th>
+</tr>
+<?php while($row = $result->fetch_assoc()): ?>
+<tr>
+<td><?= $row['id'] ?></td>
+<td><?= htmlspecialchars($row['name']) ?></td>
+<td><?= htmlspecialchars($row['license']) ?></td>
+<td><?= htmlspecialchars($row['phone']) ?></td>
+<td><?= htmlspecialchars($row['email']) ?></td>
+<td><?= htmlspecialchars($row['username']) ?></td>
+<td><?= $row['status'] ?></td>
+<td>
+<?php if($row['status']=='active'): ?>
+<a href="?action=suspend&id=<?= $row['id'] ?>" class="suspend">Приостановить</a>
+<?php else: ?>
+<a href="?action=activate&id=<?= $row['id'] ?>" class="activate">Активировать</a>
+<?php endif; ?>
+<a href="?action=reset&id=<?= $row['id'] ?>" class="reset">Сброс пароля</a>
+<a href="?action=delete&id=<?= $row['id'] ?>" class="delete" onclick="return confirm('Удалить школу?')">Удалить</a>
+</td>
+</tr>
+<?php endwhile; ?>
+</table>
+</div>
+</body>
+</html>
